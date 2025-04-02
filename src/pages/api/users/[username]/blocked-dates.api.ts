@@ -2,12 +2,6 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import { prisma } from '../../../../lib/prisma'
 
-interface BlockedDate {
-  date: number
-  amount: number
-  size: number
-}
-
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
